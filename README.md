@@ -106,10 +106,6 @@ The scripts generate:
 
 The refactored executable scripts define the active parameter set used when `run_all.m` is run. Historical report/script differences are documented only in [`config/parameter_crosscheck.md`](config/parameter_crosscheck.md) and should be resolved before using the model for quantitative interpretation.
 
-## Authorship
-
-This repository is based on a CIVE 686 group project by **Hongting Chen, Jannatul Adan, and Yuxuan Wang**. The report states that MATLAB coding was shared by all three group members. See [`AUTHORS.md`](AUTHORS.md) and [`NOTICE.md`](NOTICE.md).
-
 ## Limitations
 
 - The model is one-dimensional and uses simplified homogeneous zones.
@@ -117,7 +113,3 @@ This repository is based on a CIVE 686 group project by **Hongting Chen, Jannatu
 - Chromium co-contamination is excluded.
 - Biomass, electron-donor transport, geochemical competition, sorption, and complete daughter-product mass stoichiometry are simplified.
 - The explicit finite-difference method requires appropriate spatial and temporal steps for numerical stability.
-
-## Course context
-
-Developed for **CIVE 686 Site Remediation** at McGill University as a term project on bioremediation and permeable reactive barriers.
