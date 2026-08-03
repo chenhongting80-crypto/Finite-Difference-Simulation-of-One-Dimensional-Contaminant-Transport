@@ -1,0 +1,20 @@
+# MATLAB generated files
+*.asv
+*.autosave
+*.m~
+*.mlx~
+slprj/
+codegen/
+*.mex*
+
+# Large/generated results
+results/generated/*
+!results/generated/.gitkeep
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/

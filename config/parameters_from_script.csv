@@ -1,0 +1,20 @@
+scenario,parameter,symbol,value,unit,source_location
+both,longitudinal dispersivity,alpha_L,0.015,m,MATLAB script
+both,tortuosity,tau,0.8,-,MATLAB script
+method1,hydraulic conductivity,K,17,m/day,MATLAB script
+method2,hydraulic conductivity,K,17,m/day,MATLAB script
+both,porosity,n,0.38,-,MATLAB script
+both,hydraulic gradient,i,0.0033,-,MATLAB script
+both,molecular diffusion TCE,D0_TCE,10.1e-6,cm^2/s,MATLAB script
+both,molecular diffusion cDCE,D0_cDCE,11.4e-6,cm^2/s,MATLAB script
+both,molecular diffusion VC,D0_VC,13.3e-6,cm^2/s,MATLAB script
+both,volumetric mass-transfer coefficient,KT_A_V,7.8e-4,day^-1,MATLAB script
+both,initial TCE concentration,C0,10,mg/L,MATLAB script
+both,initial source mass,M0,1e9,mg,MATLAB script
+method1,cell density,X,2e9,cells/L,MATLAB script
+method2,cell density,X,1e10,cells/L,MATLAB script
+method1,time step,dt,0.03,day,MATLAB script
+method2,time step,dt,0.05,day,MATLAB script
+both,active spatial step,dx,0.029940119760479,m,refactored executable scripts
+method1,simulation horizon,t_end,700,day,MATLAB script
+method2,simulation horizon,t_end,700,day,refactored executable script
