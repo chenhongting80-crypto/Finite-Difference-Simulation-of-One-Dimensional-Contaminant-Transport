@@ -13,8 +13,6 @@ Reported observations include:
 - Near the Zone 2 inlet, cDCE peaks around 140–150 mg/L, while VC peaks around 10–15 mg/L.
 - Farther downgradient, TCE is largely absent, while lower and delayed cDCE and VC peaks remain.
 
-See `results/report_figures/method1/`.
-
 ## Method 2: permeable reactive biobarrier
 
 The report describes transport-dominated behavior upstream of the PRB and localized reaction within the 10 m barrier. TCE drops sharply upon entering the barrier, with cDCE and VC forming primarily inside that zone.
@@ -25,8 +23,6 @@ Reported observations include:
 - Residual dissolved TCE continues to move through the transition zone after source shutdown.
 - The PRB continues to remove TCE and generate daughter products as the residual plume arrives.
 - By day 620, TCE is essentially absent and only trace daughter products remain near the PRB.
-
-See `results/report_figures/method2/`.
 
 ## Interpretation
 

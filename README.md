@@ -15,17 +15,17 @@ The model combines advection, hydrodynamic dispersion, finite source release, an
 
 ## Representative results
 
-> **Historical-results note:** The figures in this section were extracted from the course report. They have not yet been reproduced by the refactored executable code.
+> **Reproducibility note:** The figures below were generated using the refactored MATLAB implementation in this repository with MATLAB R2024b.
 
-### Distributed treatment: concentration profiles at day 200
+### Distributed treatment: concentration profiles at simulation day 200.01
 
-![Method 1 concentration-distance profile at day 200](results/report_figures/method1/spatial/day_200.png)
+![Method 1 concentration-distance profile at simulation day 200.01](results/generated/method1/spatial_day_200.png)
 
 TCE remains source-controlled in Zone 1, while cDCE accumulates as the dominant intermediate in the reactive downgradient zone.
 
 ### Reactive barrier: concentration profiles at day 400
 
-![Method 2 concentration-distance profile at day 400](results/report_figures/method2/spatial/day_400.png)
+![Method 2 concentration-distance profile at day 400](results/generated/method2/spatial_day_400.png)
 
 The PRB localizes the reaction near the end of the modeled domain and reduces TCE concentrations within the modeled barrier while daughter products form there.
 
@@ -33,7 +33,7 @@ The PRB localizes the reaction near the end of the modeled domain and reduces TC
 
 | Distributed treatment | Permeable reactive barrier |
 |---|---|
-| ![Method 1 time series near the treatment-zone inlet](results/report_figures/method1/timeseries/zone2_x2m.png) | ![Method 2 time series near the PRB inlet](results/report_figures/method2/timeseries/prb_near_inlet.png) |
+| ![Method 1 time series near the treatment-zone inlet](results/generated/method1/timeseries_zone2_x2m.png) | ![Method 2 time series near the PRB inlet](results/generated/method2/timeseries_prb_near_inlet.png) |
 
 ## Numerical formulation
 
@@ -68,12 +68,13 @@ TCE release in the source zone is modeled using a mass-transfer term, while biod
 ├── src/
 │   ├── run_method1_distributed.m     # Distributed treatment model
 │   ├── run_method2_prb.m             # PRB treatment model
-│   └── private/                      # Figure-export helpers
+│   └── private/
+│       ├── ensure_directory.m         # Output-directory helper
+│       └── save_figure.m              # Figure-export helper
 ├── config/                           # Script parameter records
 ├── docs/                             # Model and results
 └── results/
-    ├── report_figures/               # Figures extracted from the course report
-    └── generated/                    # New figures and CSV files after a run
+    └── generated/                    # Current generated figures and CSV outputs
 ```
 
 ## Running the model
