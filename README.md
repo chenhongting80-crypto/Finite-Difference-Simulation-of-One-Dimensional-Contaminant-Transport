@@ -39,12 +39,12 @@ The PRB localizes the reaction near the end of the modeled domain and reduces TC
 
 The governing one-dimensional advection-dispersion-reaction equation is
 
-$$
+```math
 \frac{\partial C}{\partial t}
 = -v_x\frac{\partial C}{\partial x}
 + D_x\frac{\partial^2 C}{\partial x^2}
-+ R.
-$$
++ R
+```
 
 Groundwater pore velocity is calculated from
 
@@ -69,13 +69,11 @@ TCE release in the source zone is modeled using a mass-transfer term, while biod
 │   ├── run_method1_distributed.m     # Distributed treatment model
 │   ├── run_method2_prb.m             # PRB treatment model
 │   └── private/                      # Figure-export helpers
-├── config/                           # Script/report parameter records
-├── docs/                             # Model, results, references, and notes
-├── results/
-│   ├── report_figures/               # Figures extracted from the course report
-│   └── generated/                    # New figures and CSV files after a run
-└── archive/
-    └── Term_Project_Bioremediation_original.m
+├── config/                           # Script parameter records
+├── docs/                             # Model and results
+└── results/
+    ├── report_figures/               # Figures extracted from the course report
+    └── generated/                    # New figures and CSV files after a run
 ```
 
 ## Running the model
@@ -101,10 +99,6 @@ The scripts generate:
 - TCE source-mass depletion curves;
 - CSV files containing the selected time series;
 - compact MAT files containing snapshots and model parameters.
-
-## Reproducibility and parameter cross-check
-
-The refactored executable scripts define the active parameter set used when `run_all.m` is run. Historical report/script differences are documented only in [`config/parameter_crosscheck.md`](config/parameter_crosscheck.md) and should be resolved before using the model for quantitative interpretation.
 
 ## Limitations
 
